@@ -1,6 +1,7 @@
 On a commencé d'abord par créer une application très simple afin de tester son deploiment sur mogenius, il s'agit d'une application Hello world
 consituté d'un simple fichier index.html ainsi que d'un fichier dockerfile. Afin de la deployer sur mogenius on a d'abord crée un service 
-qu'on a relié à ce dépôt Github en spécifiant dans la séction PORTS & DOMAIN, le port 80 pour HTTPS. Ensuite mogenius se charge pour cloner l'application depuis github et effectuer le build de docker qui a été spécifié dans le fichier Dockerfile.
+qu'on a relié à ce dépôt Github en spécifiant dans la séction PORTS & DOMAIN, le port 80 pour HTTPS. Ensuite mogenius se charge pour cloner l'application
+depuis github et effectuer le build de docker qui a été spécifié dans le fichier Dockerfile.
 On finalement peut accéder à notre application en appuyant sur external hostname.
 
 Remarque: J'ai passé un temps considérable à essayer de debugger l'erreur du build de docker, il s'est avéré par la suite qu'il fallait passer mon dépôt 
